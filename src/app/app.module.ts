@@ -1,16 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { UpgradeModule } from '@angular/upgrade/static';
+
+import { UpgradedNgOneComponent } from './legacy/upgraded-app';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UpgradedNgOneComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    UpgradeModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  //adding upgrade to the appModule could allow it to be ref'd
+  constructor(public upgrade: UpgradeModule) {}
+  ngDoBootstrap() {}
+}

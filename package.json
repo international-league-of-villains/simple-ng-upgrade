@@ -24,8 +24,12 @@
     "@angular/upgrade": "^4.2.4",
     "@types/angular": "^1.6.21",
     "angular": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "angular-aria": "^1.5.7",
+    "angular-material": "^1.1.4",
     "core-js": "^2.4.1",
     "rxjs": "^5.1.0",
+    "simple-ng1.5-es5": "git+https://github.com/international-league-of-villains/simple-ng1.5-es5.git",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {

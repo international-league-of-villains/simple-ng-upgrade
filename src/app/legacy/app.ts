@@ -9,8 +9,7 @@ import { AppComponent } from '../app.component';
 export const NgOneModule = angular.module('ngOneModule', ['oldNG1']);
 
 NgOneModule.component('ngOneComponent', {
-  template: `<div>NgOneAppModule!</div>
-              <md-toolbar layout="row" class="md-toolbar-tools">
+  template: `<md-toolbar layout="row" class="md-toolbar-tools">
                 <h1>International League of Villains</h1>
               </md-toolbar>
               <old-select-wrapper></old-select-wrapper>
